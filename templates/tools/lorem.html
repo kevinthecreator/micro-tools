@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>📖 Lorem Ipsum</h2>
+<form method="post"><input name="count"><button>Generate</button></form>
+{% if paragraphs %}{% for p in paragraphs %}<p>{{ p }}</p>{% endfor %}{% endif %}
+{% endblock %}

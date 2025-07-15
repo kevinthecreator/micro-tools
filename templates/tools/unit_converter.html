@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>🔁 Unit Converter</h2>
+<form method="post">
+<input name="value">
+<select name="unit">
+<option value="km-miles">Km to Miles</option>
+<option value="miles-km">Miles to Km</option>
+<option value="kg-lbs">Kg to Lbs</option>
+<option value="lbs-kg">Lbs to Kg</option>
+</select>
+<button>Convert</button>
+</form>
+{% if result %}<div class="result-box">{{ result }}</div>{% endif %}
+{% endblock %}

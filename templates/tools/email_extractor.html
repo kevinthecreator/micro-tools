@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>📮 Email Extractor</h2>
+<form method="post"><textarea name="input_text"></textarea><button>Extract</button></form>
+{% if emails %}<ul>{% for email in emails %}<li>{{ email }}</li>{% endfor %}</ul>{% endif %}
+{% endblock %}

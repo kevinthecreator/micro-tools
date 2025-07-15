@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>✂️ Slug Formatter</h2>
+<form method="post"><input name="text"><button>Slugify</button></form>
+{% if slug %}<div class="result-box">{{ slug }}</div>{% endif %}
+{% endblock %}
